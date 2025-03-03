@@ -9,7 +9,8 @@ data class Message(
     val SenderID: String,
     val Message: String,
     val timestamp: String,
-    val MessageType: String
+    val MessageType: String,
+    val IsDeleted: Boolean
 )
 
 @Serializable

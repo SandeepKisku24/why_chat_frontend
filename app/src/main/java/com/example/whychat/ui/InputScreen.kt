@@ -23,7 +23,7 @@ fun InputScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(16.dp))
 
         OutlinedTextField(
-            value = username,
+            value = username.trim(),
             onValueChange = { username = it },
             placeholder = { Text("Enter your name") }
         )

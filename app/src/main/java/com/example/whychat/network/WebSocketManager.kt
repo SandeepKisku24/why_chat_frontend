@@ -18,7 +18,7 @@ object WebSocketManager {
     val messages = _messages.asSharedFlow()
     fun connect(chatGroupId: String) {
         val request = Request.Builder()
-            .url("ws://1xx.xxx.x.xx:8080/ws?chat_group_id=$chatGroupId")
+            .url("ws://192.168.1.42:8080/ws?chat_group_id=$chatGroupId")
             .build()
         val client = OkHttpClient()
 
